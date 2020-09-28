@@ -29,8 +29,8 @@ struct ArtistViewModel {
         self.category = artist.category
         self.welcomeDescription = artist.welcomeDescription
         self.regionID = artist.regionID
-        self.coverImgURL = artist.coverImgURL
-        self.profileImgURL = artist.profileImgURL
+        self.coverImgURL = SC.ASSET_URL+artist.coverImgURL!
+        self.profileImgURL = SC.ASSET_URL+artist.profileImgURL!
         self.published = artist.published
         self.rank = artist.rank
         self.createdAt = artist.createdAt

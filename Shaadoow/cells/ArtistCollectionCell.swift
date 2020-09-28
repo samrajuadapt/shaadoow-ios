@@ -26,8 +26,7 @@ class ArtistCollectionCell: UICollectionViewCell {
     
     func loadImage(imgUrl:String!,image:UIImageView){
        if(imgUrl != nil){
-            let url = SC.ASSET_URL+imgUrl
-            AF.request(url,method: .get).responseData { data in
+            AF.request(imgUrl,method: .get).responseData { data in
                 image.image = UIImage(data: data.data!)
             }
         }

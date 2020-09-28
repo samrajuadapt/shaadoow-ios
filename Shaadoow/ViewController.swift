@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDataSource, UITableViewDelegate {
     
     
     @IBOutlet weak var artistCollection:UICollectionView!
+    @IBOutlet weak var feedTableView:UITableView!
     
     var artistModels = [ArtistViewModel]()
+    var feedViewModels = [FeedsViewModel]()
     
     var categoryEstimateWidth = 180.0
     var cellMarginSize = 20.0
@@ -23,8 +25,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         artistCollection.delegate = self
         artistCollection.dataSource = self
+        feedTableView.delegate = self
+        feedTableView.dataSource = self
         setupGridView()
         fetchArtist()
+        fetchFeeds()
         
         artistCollection.register(UINib(nibName: "ArtistCollectionCell", bundle: nil), forCellWithReuseIdentifier: "artistcell")
     
@@ -42,6 +47,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
+    func fetchFeeds(){
+        print("fetch feed")
+        Service.shared.fetchFeeds { datas in
+             print(datas?.count)
+            self.feedViewModels = datas?.map({return FeedsViewModel(feed: $0)}) ?? []
+            self.feedTableView.reloadData()
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return artistModels.count
     }
@@ -52,22 +66,31 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.artistViewModel = artistModels[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return feedViewModels.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "feedcell") as! FeedTableCell
+        cell.feedViewModel = feedViewModels[indexPath.row]
+        return cell
+    }
 
 
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = self.calculateWith(view: collectionView)
         return CGSize(width: width, height: width)
-        
-    
+
+
     }
 
     func calculateWith(view:UICollectionView) -> CGFloat {
-        var estimatedWidth = CGFloat(categoryEstimateWidth)
-
+        let estimatedWidth = CGFloat(categoryEstimateWidth)
         let cellCount = floor(CGFloat(self.view.frame.size.width / estimatedWidth))
 
         let margin = CGFloat(cellMarginSize * 2)
@@ -75,7 +98,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 
         return width
     }
-    
+
 }
 
 

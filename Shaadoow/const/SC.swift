@@ -17,6 +17,7 @@ class SC {
     
     public static var DEFAULT_PAGE = 1
     public static var DEFAULT_LIMIT = 5
-    
+    public static var DEFAULT_FEED_LIMIT = 18
+
 
 }
