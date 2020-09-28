@@ -44,10 +44,19 @@
                                 <rect key="frame" x="0.0" y="94" width="414" height="768"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vFO-xK-B5h">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="980"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1010"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Recomended For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-W1-jxC">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="lVp-9A-kQe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DO4-0t-wDw">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                                <rect key="frame" x="0.0" y="30" width="414" height="180"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="OFI-no-fJE"/>
@@ -69,8 +78,8 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qw5-nK-zHt">
-                                                <rect key="frame" x="0.0" y="180" width="414" height="800"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qw5-nK-zHt">
+                                                <rect key="frame" x="0.0" y="210" width="414" height="800"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="800" id="BgU-Jg-qmK"/>
@@ -197,10 +206,13 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="DO4-0t-wDw" firstAttribute="leading" secondItem="vFO-xK-B5h" secondAttribute="leading" id="0bj-IM-776"/>
-                                            <constraint firstItem="DO4-0t-wDw" firstAttribute="top" secondItem="vFO-xK-B5h" secondAttribute="top" id="1AG-ne-YIe"/>
                                             <constraint firstItem="qw5-nK-zHt" firstAttribute="leading" secondItem="vFO-xK-B5h" secondAttribute="leading" id="1U2-w2-b6x"/>
+                                            <constraint firstItem="WC7-W1-jxC" firstAttribute="leading" secondItem="vFO-xK-B5h" secondAttribute="leading" id="82S-20-9uc"/>
+                                            <constraint firstItem="WC7-W1-jxC" firstAttribute="top" secondItem="vFO-xK-B5h" secondAttribute="top" id="JP6-a8-Q3v"/>
                                             <constraint firstItem="qw5-nK-zHt" firstAttribute="top" secondItem="DO4-0t-wDw" secondAttribute="bottom" id="XYe-1u-HfT"/>
                                             <constraint firstAttribute="trailing" secondItem="qw5-nK-zHt" secondAttribute="trailing" id="fWG-4P-iuY"/>
+                                            <constraint firstItem="DO4-0t-wDw" firstAttribute="top" secondItem="WC7-W1-jxC" secondAttribute="bottom" id="hRD-FC-96D"/>
+                                            <constraint firstAttribute="trailing" secondItem="WC7-W1-jxC" secondAttribute="trailing" id="reO-Os-hIo"/>
                                             <constraint firstAttribute="trailing" secondItem="DO4-0t-wDw" secondAttribute="trailing" id="ypl-ku-USM"/>
                                         </constraints>
                                     </stackView>
