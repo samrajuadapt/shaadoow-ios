@@ -25,6 +25,7 @@
 		CFB8A02C2521F08200160ACC /* FeedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A02B2521F08200160ACC /* FeedTableCell.swift */; };
 		CFB8A02E2521F83400160ACC /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A02D2521F83400160ACC /* Feed.swift */; };
 		CFB8A0302521F8F800160ACC /* FeedsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A02F2521F8F800160ACC /* FeedsViewModel.swift */; };
+		CFB8A0352522024900160ACC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A0342522024900160ACC /* Extension.swift */; };
 		D36B37B85B1DDE8C6DBD274F /* Pods_Shaadoow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712237480B9B8CB0F055D90F /* Pods_Shaadoow.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		CFB8A02B2521F08200160ACC /* FeedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableCell.swift; sourceTree = "<group>"; };
 		CFB8A02D2521F83400160ACC /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		CFB8A02F2521F8F800160ACC /* FeedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewModel.swift; sourceTree = "<group>"; };
+		CFB8A0342522024900160ACC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		CF2444F12521BF7D00C7A03F /* Shaadoow */ = {
 			isa = PBXGroup;
 			children = (
+				CFB8A0312522022400160ACC /* ext */,
 				CFB8A0222521D8DC00160ACC /* cells */,
 				CFB8A0172521C28800160ACC /* const */,
 				CFB8A0162521C28100160ACC /* repo */,
@@ -164,6 +167,14 @@
 				CFB8A02B2521F08200160ACC /* FeedTableCell.swift */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		CFB8A0312522022400160ACC /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8A0342522024900160ACC /* Extension.swift */,
+			);
+			path = ext;
 			sourceTree = "<group>";
 		};
 		F18C7EBCD5462D07A975DC5E /* Pods */ = {
@@ -295,6 +306,7 @@
 				CFB8A02E2521F83400160ACC /* Feed.swift in Sources */,
 				CFB8A01F2521C6B900160ACC /* Service.swift in Sources */,
 				CF2444F72521BF7D00C7A03F /* ViewController.swift in Sources */,
+				CFB8A0352522024900160ACC /* Extension.swift in Sources */,
 				CFB8A02A2521E4CE00160ACC /* RoundImage.swift in Sources */,
 				CF2444F32521BF7D00C7A03F /* AppDelegate.swift in Sources */,
 				CFB8A0132521C0BA00160ACC /* GradientView.swift in Sources */,

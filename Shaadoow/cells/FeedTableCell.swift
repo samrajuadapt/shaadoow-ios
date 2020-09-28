@@ -16,6 +16,9 @@ class FeedTableCell: UITableViewCell {
     
     @IBOutlet weak var lblName:UILabel!
     @IBOutlet weak var lblDesc:UILabel!
+    @IBOutlet weak var lblLike:UILabel!
+    @IBOutlet weak var lblComment:UILabel!
+    @IBOutlet weak var lblTime:UILabel!
     
     
     var feedViewModel:FeedsViewModel!{
@@ -24,6 +27,9 @@ class FeedTableCell: UITableViewCell {
             loadImage(imgUrl: feedViewModel.songDetails?.coverImgURL, image: imgContent)
             lblDesc.text = feedViewModel.recordingDetails?.recordingDetailsDescription
             lblName.text = feedViewModel.createdBy?.name
+            lblLike.text = feedViewModel.like
+            lblComment.text = feedViewModel.comments
+            lblTime.text = feedViewModel.time
         }
     }
     

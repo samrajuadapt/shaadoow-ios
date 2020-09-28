@@ -48,9 +48,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func fetchFeeds(){
-        print("fetch feed")
         Service.shared.fetchFeeds { datas in
-             print(datas?.count)
             self.feedViewModels = datas?.map({return FeedsViewModel(feed: $0)}) ?? []
             self.feedTableView.reloadData()
         }
