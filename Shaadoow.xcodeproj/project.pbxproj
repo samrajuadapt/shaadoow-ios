@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		CF2444FA2521BF7D00C7A03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2444F82521BF7D00C7A03F /* Main.storyboard */; };
 		CF2444FC2521BF8200C7A03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2444FB2521BF8200C7A03F /* Assets.xcassets */; };
 		CF2444FF2521BF8200C7A03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2444FD2521BF8200C7A03F /* LaunchScreen.storyboard */; };
+		CFB8A0132521C0BA00160ACC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A0122521C0BA00160ACC /* GradientView.swift */; };
+		CFB8A0192521C2B400160ACC /* SC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A0182521C2B400160ACC /* SC.swift */; };
+		CFB8A01B2521C33500160ACC /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A01A2521C33500160ACC /* ResponseHandler.swift */; };
+		CFB8A01D2521C59A00160ACC /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A01C2521C59A00160ACC /* Artist.swift */; };
+		CFB8A01F2521C6B900160ACC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A01E2521C6B900160ACC /* Service.swift */; };
+		CFB8A0212521C72500160ACC /* ArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A0202521C72500160ACC /* ArtistViewModel.swift */; };
+		CFB8A0272521E11A00160ACC /* ArtistCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A0252521E11A00160ACC /* ArtistCollectionCell.swift */; };
+		CFB8A0282521E11A00160ACC /* ArtistCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB8A0262521E11A00160ACC /* ArtistCollectionCell.xib */; };
+		CFB8A02A2521E4CE00160ACC /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A0292521E4CE00160ACC /* RoundImage.swift */; };
+		CFB8A02C2521F08200160ACC /* FeedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8A02B2521F08200160ACC /* FeedTableCell.swift */; };
 		D36B37B85B1DDE8C6DBD274F /* Pods_Shaadoow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712237480B9B8CB0F055D90F /* Pods_Shaadoow.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +38,16 @@
 		CF2444FB2521BF8200C7A03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF2444FE2521BF8200C7A03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF2445002521BF8200C7A03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB8A0122521C0BA00160ACC /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CFB8A0182521C2B400160ACC /* SC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SC.swift; sourceTree = "<group>"; };
+		CFB8A01A2521C33500160ACC /* ResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		CFB8A01C2521C59A00160ACC /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		CFB8A01E2521C6B900160ACC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CFB8A0202521C72500160ACC /* ArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewModel.swift; sourceTree = "<group>"; };
+		CFB8A0252521E11A00160ACC /* ArtistCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCollectionCell.swift; sourceTree = "<group>"; };
+		CFB8A0262521E11A00160ACC /* ArtistCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCollectionCell.xib; sourceTree = "<group>"; };
+		CFB8A0292521E4CE00160ACC /* RoundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+		CFB8A02B2521F08200160ACC /* FeedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +91,12 @@
 		CF2444F12521BF7D00C7A03F /* Shaadoow */ = {
 			isa = PBXGroup;
 			children = (
+				CFB8A0222521D8DC00160ACC /* cells */,
+				CFB8A0172521C28800160ACC /* const */,
+				CFB8A0162521C28100160ACC /* repo */,
+				CFB8A0152521C27800160ACC /* models */,
+				CFB8A0142521C26800160ACC /* viewmodels */,
+				CFB8A0112521C0AC00160ACC /* ui */,
 				CF2444F22521BF7D00C7A03F /* AppDelegate.swift */,
 				CF2444F42521BF7D00C7A03F /* SceneDelegate.swift */,
 				CF2444F62521BF7D00C7A03F /* ViewController.swift */,
@@ -82,13 +108,64 @@
 			path = Shaadoow;
 			sourceTree = "<group>";
 		};
+		CFB8A0112521C0AC00160ACC /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8A0122521C0BA00160ACC /* GradientView.swift */,
+				CFB8A0292521E4CE00160ACC /* RoundImage.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		CFB8A0142521C26800160ACC /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8A0202521C72500160ACC /* ArtistViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		CFB8A0152521C27800160ACC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8A01A2521C33500160ACC /* ResponseHandler.swift */,
+				CFB8A01C2521C59A00160ACC /* Artist.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CFB8A0162521C28100160ACC /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8A01E2521C6B900160ACC /* Service.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		CFB8A0172521C28800160ACC /* const */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8A0182521C2B400160ACC /* SC.swift */,
+			);
+			path = const;
+			sourceTree = "<group>";
+		};
+		CFB8A0222521D8DC00160ACC /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				CFB8A0252521E11A00160ACC /* ArtistCollectionCell.swift */,
+				CFB8A0262521E11A00160ACC /* ArtistCollectionCell.xib */,
+				CFB8A02B2521F08200160ACC /* FeedTableCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		F18C7EBCD5462D07A975DC5E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				61709DBFCAEA0BA9399A58E6 /* Pods-Shaadoow.debug.xcconfig */,
 				25300FC3213E820B4C2EE95C /* Pods-Shaadoow.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB8A0282521E11A00160ACC /* ArtistCollectionCell.xib in Resources */,
 				CF2444FF2521BF8200C7A03F /* LaunchScreen.storyboard in Resources */,
 				CF2444FC2521BF8200C7A03F /* Assets.xcassets in Resources */,
 				CF2444FA2521BF7D00C7A03F /* Main.storyboard in Resources */,
@@ -207,9 +285,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB8A0212521C72500160ACC /* ArtistViewModel.swift in Sources */,
+				CFB8A01F2521C6B900160ACC /* Service.swift in Sources */,
 				CF2444F72521BF7D00C7A03F /* ViewController.swift in Sources */,
+				CFB8A02A2521E4CE00160ACC /* RoundImage.swift in Sources */,
 				CF2444F32521BF7D00C7A03F /* AppDelegate.swift in Sources */,
+				CFB8A0132521C0BA00160ACC /* GradientView.swift in Sources */,
+				CFB8A0192521C2B400160ACC /* SC.swift in Sources */,
 				CF2444F52521BF7D00C7A03F /* SceneDelegate.swift in Sources */,
+				CFB8A01B2521C33500160ACC /* ResponseHandler.swift in Sources */,
+				CFB8A0272521E11A00160ACC /* ArtistCollectionCell.swift in Sources */,
+				CFB8A02C2521F08200160ACC /* FeedTableCell.swift in Sources */,
+				CFB8A01D2521C59A00160ACC /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
