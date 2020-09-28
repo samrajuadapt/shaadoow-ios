@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF2444F32521BF7D00C7A03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2444F22521BF7D00C7A03F /* AppDelegate.swift */; };
+		CF2444F52521BF7D00C7A03F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2444F42521BF7D00C7A03F /* SceneDelegate.swift */; };
+		CF2444F72521BF7D00C7A03F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2444F62521BF7D00C7A03F /* ViewController.swift */; };
+		CF2444FA2521BF7D00C7A03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2444F82521BF7D00C7A03F /* Main.storyboard */; };
+		CF2444FC2521BF8200C7A03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2444FB2521BF8200C7A03F /* Assets.xcassets */; };
+		CF2444FF2521BF8200C7A03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2444FD2521BF8200C7A03F /* LaunchScreen.storyboard */; };
+		D36B37B85B1DDE8C6DBD274F /* Pods_Shaadoow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712237480B9B8CB0F055D90F /* Pods_Shaadoow.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25300FC3213E820B4C2EE95C /* Pods-Shaadoow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shaadoow.release.xcconfig"; path = "Target Support Files/Pods-Shaadoow/Pods-Shaadoow.release.xcconfig"; sourceTree = "<group>"; };
+		61709DBFCAEA0BA9399A58E6 /* Pods-Shaadoow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shaadoow.debug.xcconfig"; path = "Target Support Files/Pods-Shaadoow/Pods-Shaadoow.debug.xcconfig"; sourceTree = "<group>"; };
+		712237480B9B8CB0F055D90F /* Pods_Shaadoow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shaadoow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2444EF2521BF7D00C7A03F /* Shaadoow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shaadoow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2444F22521BF7D00C7A03F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF2444F42521BF7D00C7A03F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF2444F62521BF7D00C7A03F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF2444F92521BF7D00C7A03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF2444FB2521BF8200C7A03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2444FE2521BF8200C7A03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF2445002521BF8200C7A03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2444EC2521BF7D00C7A03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36B37B85B1DDE8C6DBD274F /* Pods_Shaadoow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2368E06BEA58AB2E8761771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				712237480B9B8CB0F055D90F /* Pods_Shaadoow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF2444E62521BF7D00C7A03F = {
+			isa = PBXGroup;
+			children = (
+				CF2444F12521BF7D00C7A03F /* Shaadoow */,
+				CF2444F02521BF7D00C7A03F /* Products */,
+				F18C7EBCD5462D07A975DC5E /* Pods */,
+				B2368E06BEA58AB2E8761771 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2444F02521BF7D00C7A03F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2444EF2521BF7D00C7A03F /* Shaadoow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2444F12521BF7D00C7A03F /* Shaadoow */ = {
+			isa = PBXGroup;
+			children = (
+				CF2444F22521BF7D00C7A03F /* AppDelegate.swift */,
+				CF2444F42521BF7D00C7A03F /* SceneDelegate.swift */,
+				CF2444F62521BF7D00C7A03F /* ViewController.swift */,
+				CF2444F82521BF7D00C7A03F /* Main.storyboard */,
+				CF2444FB2521BF8200C7A03F /* Assets.xcassets */,
+				CF2444FD2521BF8200C7A03F /* LaunchScreen.storyboard */,
+				CF2445002521BF8200C7A03F /* Info.plist */,
+			);
+			path = Shaadoow;
+			sourceTree = "<group>";
+		};
+		F18C7EBCD5462D07A975DC5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61709DBFCAEA0BA9399A58E6 /* Pods-Shaadoow.debug.xcconfig */,
+				25300FC3213E820B4C2EE95C /* Pods-Shaadoow.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2444EE2521BF7D00C7A03F /* Shaadoow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2445032521BF8200C7A03F /* Build configuration list for PBXNativeTarget "Shaadoow" */;
+			buildPhases = (
+				77CD146FC69CAE7F137FC107 /* [CP] Check Pods Manifest.lock */,
+				CF2444EB2521BF7D00C7A03F /* Sources */,
+				CF2444EC2521BF7D00C7A03F /* Frameworks */,
+				CF2444ED2521BF7D00C7A03F /* Resources */,
+				AF33DE1E134CED20EC9876C0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shaadoow;
+			productName = Shaadoow;
+			productReference = CF2444EF2521BF7D00C7A03F /* Shaadoow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2444E72521BF7D00C7A03F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = AdaptME;
+				TargetAttributes = {
+					CF2444EE2521BF7D00C7A03F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = CF2444EA2521BF7D00C7A03F /* Build configuration list for PBXProject "Shaadoow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF2444E62521BF7D00C7A03F;
+			productRefGroup = CF2444F02521BF7D00C7A03F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2444EE2521BF7D00C7A03F /* Shaadoow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2444ED2521BF7D00C7A03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2444FF2521BF8200C7A03F /* LaunchScreen.storyboard in Resources */,
+				CF2444FC2521BF8200C7A03F /* Assets.xcassets in Resources */,
+				CF2444FA2521BF7D00C7A03F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77CD146FC69CAE7F137FC107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shaadoow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF33DE1E134CED20EC9876C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shaadoow/Pods-Shaadoow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shaadoow/Pods-Shaadoow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shaadoow/Pods-Shaadoow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2444EB2521BF7D00C7A03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2444F72521BF7D00C7A03F /* ViewController.swift in Sources */,
+				CF2444F32521BF7D00C7A03F /* AppDelegate.swift in Sources */,
+				CF2444F52521BF7D00C7A03F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF2444F82521BF7D00C7A03F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2444F92521BF7D00C7A03F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF2444FD2521BF8200C7A03F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2444FE2521BF8200C7A03F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF2445012521BF8200C7A03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF2445022521BF8200C7A03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF2445042521BF8200C7A03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61709DBFCAEA0BA9399A58E6 /* Pods-Shaadoow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 739M3MK66F;
+				INFOPLIST_FILE = Shaadoow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samboy.Shaadoow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF2445052521BF8200C7A03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25300FC3213E820B4C2EE95C /* Pods-Shaadoow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 739M3MK66F;
+				INFOPLIST_FILE = Shaadoow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samboy.Shaadoow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2444EA2521BF7D00C7A03F /* Build configuration list for PBXProject "Shaadoow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2445012521BF8200C7A03F /* Debug */,
+				CF2445022521BF8200C7A03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2445032521BF8200C7A03F /* Build configuration list for PBXNativeTarget "Shaadoow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2445042521BF8200C7A03F /* Debug */,
+				CF2445052521BF8200C7A03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2444E72521BF7D00C7A03F /* Project object */;
+}
